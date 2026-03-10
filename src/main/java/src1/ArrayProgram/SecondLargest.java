@@ -7,13 +7,13 @@ public class SecondLargest {
         int[] numbers = {10, 20, 50, 30, 40};
 
         // Find the second largest element
-        int secondLargest = Arrays.stream(numbers)
-                                  .boxed()
-                                  .sorted((a, b) -> b - a)
-                                  .distinct()
-                                  .skip(1)
-                                  .findFirst()
-                                  .get();
+   int secondLargest = Arrays.stream(numbers)
+                             .boxed()
+                             .sorted((a, b) -> b.compareTo(a))
+                             .distinct()
+                             .skip(1)
+                             .findFirst()
+                             .orElse(-1);
 
         System.out.println("Second Largest Element: " + secondLargest);
     }
