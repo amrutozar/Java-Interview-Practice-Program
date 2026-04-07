@@ -2,30 +2,27 @@ package src.Exception;
 /*
 public class ExceptionTest6 {
 
-	{
+  public static void main(String a[]) {
 
-	    public static void main(String a[]) {
+    try {
 
-	    	try {
+      int val = 10 / 0;
 
-	    		int val = 10/0;
+    } finally {
 
-	    	} 
+      System.out.println("In Finally");
 
-			finally{
+    }catch(Exception e){  //error: catch without try block
 
-			System.out.println("In Finally");
+      System.out.println(e);
 
-			}catch(Exception e) {
+    } catch(ArithmeticException ae){
 
-	    		System.out.println(e);
+      System.out.println(ae);
 
-	    	} catch(ArithmeticException ae) {
+    }
 
-	    		System.out.println(ae);
+  }
 
-	    	}
-
-	    }
 }
 */

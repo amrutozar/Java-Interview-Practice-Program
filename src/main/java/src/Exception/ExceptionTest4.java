@@ -10,7 +10,7 @@ public class ExceptionTest4 {
 		method();
 	}
 	
-	int method() {
+	int method() {  // need static method to call it
 
 		try { return 1; throw new Exception();}
 
@@ -18,7 +18,7 @@ public class ExceptionTest4 {
 
 		catch(Exception e){ return 3;}
 
-		catch(ClassCastException c) { return 4;}
+		catch(ClassCastException c) { return 4;} //unreachable code
 
 		finally {return 5;}
 
